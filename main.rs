@@ -68,7 +68,7 @@ impl State {
             self.player.flap();
         }
         self.player.render(ctx);
-        ctx.print(0,0, "Tryck MELLANSLAG för hoppa uppåt!");
+        ctx.print(0,0, "Tryck MELLANSLAG för att hoppa uppåt!");
         ctx.print(0,1, &format!("KM: {}", self.score));
        
         self.obstacle.render(ctx, self.player.x);
